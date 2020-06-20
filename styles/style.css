@@ -1,0 +1,460 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.contenedor {
+  /* Ancho del 90% para dejar márgenes */
+  width: 90%;
+  max-width: 1000px;
+  /* Propiedad para centrar el contenido del contenedor */
+  margin: 0 auto;
+  /* Evita que se desmaquete la página */
+  overflow: hidden;
+}
+
+/* ------------- HEADER -------------- */
+header {
+  background: url(https://i.ibb.co/MMFhtMr/bg-header.png) #49a3d6;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Alto máximo de 600px */
+  max-height: 600px;
+}
+
+header .menu {
+  /* 40px arriba y abajo, 0 hacia los lados */
+  margin: 40px 0;
+  text-align: right;
+  animation: desplazar_izquierda 1s ease-in;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 0 20px;
+  /* Me da un margen de 9px para el borde */
+  padding-bottom: 9px;
+  /*  1em = a 16px del body */
+  font-size: 1em;
+  /* Transparente: Evita que haga saltos si no se agrega el borde */
+  border-bottom: 2px solid transparent;
+}
+
+header .menu a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+header .contenedor-texto {
+  /* Se usa flexbox para centrar el contendor recpecto al header */
+  display: flex;
+  margin: 190px 0;
+  justify-content: center;
+  align-content: center;
+  animation: desplazar_abajo 1s ease-in; /* Animación */
+}
+
+header .contenedor-texto .texto {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2 {
+  color: #fff;
+  font-weight: 300;
+  /* Quita el padding pordefecto del h1, h2 */
+  margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+header .contenedor-texto .texto .profesion {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+/* ---------- CONTENIDO PRINCIPAL ---------- */
+.main .contenedor {
+  /* Permite que al llegar al límite del contenedor y que sea visible la foto */
+  overflow: visible;
+}
+
+.main .acerca-de {
+  text-align: center;
+}
+
+.main .acerca-de .foto {
+  /* Con el margen de -60px superpone la foto hacia arriba por encima del cotenedor */
+  margin-top: -60px;
+  animation: desplazar_img_derecha 1s ease-in;
+}
+
+.main .acerca-de img {
+  vertical-align: top;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.main .acerca-de .texto {
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 30px;
+  width: 90%;
+  margin: 40px auto 60px auto;
+}
+
+.main .acerca-de .texto .titulo {
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #dd820d;
+  text-align: center;
+}
+
+.main .acerca-de .texto .bold {
+  color: #3895ea;
+  text-decoration: underline;
+}
+
+/* ---------- TRABAJOS ---------- */
+
+.main .trabajos {
+  background: #f2f2f2;
+  padding: 60px 0;
+}
+
+.main .trabajos .contenedor {
+  overflow: hidden;
+}
+
+.main .trabajos .titulo {
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #323068;
+  text-align: center;
+}
+
+.trabajos .contenedor-trabajos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trabajos .contenedor-trabajos .trabajo {
+  width: 23%;
+  margin-bottom: 40px;
+}
+
+.trabajos .contenedor-trabajos .trabajo .thumb {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.trabajos .contenedor-trabajos .trabajo .thumb img {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 15px;
+}
+
+.trabajos .contenedor-trabajos .trabajo .descripcion {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.trabajos .contenedor-trabajos .trabajo .nombre {
+  font-weight: 700;
+  color: #3895ea;
+  margin-bottom: 10px;
+}
+
+.trabajos .contenedor-trabajos .trabajo .categoria {
+  font-size: 14px;
+  color: #636363;
+}
+
+/* ---------- FOOTER ---------- */
+footer .contacto {
+  padding: 60px 0;
+}
+
+footer .contacto .titulo {
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #3895ea;
+  text-align: center;
+}
+
+footer .contacto .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+  border: 2px solid #cecece;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #a4a4a4;
+}
+
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+  border: 2px solid #3895ea;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+  width: 49%;
+  margin-bottom: 15px;
+}
+
+footer .contacto .formulario textarea {
+  width: 100%;
+  height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 230px;
+  margin-bottom: 15px;
+}
+
+footer .contacto .formulario .boton {
+  margin: auto;
+  background: #3895ea;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+footer .contacto .formulario .boton:hover {
+  background: #387bea;
+}
+
+/* ---------- FOOTER REDES SOCIALES ---------- */
+
+footer .redes-sociales {
+  background: #1e2b38;
+  padding: 60px 0;
+}
+
+footer .redes-sociales .contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+footer .redes-sociales a {
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  display: block;
+  padding: 15px 0;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+/* COLORES REDES SOCIALES */
+
+footer .redes-sociales .twitter:hover {
+  background: #1da1f2;
+}
+
+footer .redes-sociales .facebook:hover {
+  background: #3b5998;
+}
+
+footer .redes-sociales .instagram:hover {
+  background: #fd1d1d;
+}
+
+footer .redes-sociales .github:hover {
+  background: #4078c0;
+}
+
+footer .redes-sociales .likedln:hover {
+  background: #0077b5;
+}
+
+footer .redes-sociales .vkontakte:hover {
+  background: #45668e;
+}
+
+/* -------- RESPONSIVE DESIGN -------- */
+
+@media screen and (max-width: 440px) {
+  header .menu {
+    text-align: center;
+  }
+
+  header .contenedor-texto .texto {
+    padding: 15px 40px;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo {
+    width: 30%;
+  }
+
+  footer .contacto .formulario input[type="text"],
+  footer .contacto .formulario input[type="email"],
+  footer .contacto .formulario textarea {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  footer .contacto .formulario .boton {
+    padding: 10px 35px;
+    cursor: pointer;
+  }
+
+  footer .redes-sociales a {
+    font-size: 25px;
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  header .menu {
+    /* --- Flexbox para acomodar textos --- */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .contenedor-texto .texto {
+    padding: 15px 30px;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo {
+    width: 30%;
+  }
+
+  header .contenedor-texto .texto .nombre {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  header .contenedor-texto .texto .profesion {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header .menu {
+    /* --- Flexbox para acomodar textos --- */
+    display: flex;
+    justify-content: center;
+  }
+
+  header .contenedor-texto .texto {
+    padding: 15px 30px;
+  }
+
+  .trabajos .contenedor-trabajos .trabajo {
+    width: 45%;
+  }
+
+  header .contenedor-texto .texto .nombre {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  header .contenedor-texto .texto .profesion {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  footer .redes-sociales a {
+    font-size: 20px;
+    margin: 0 20px;
+  }
+}
+
+/* ------ ANIMACIONES KEYFREAMES ------ */
+
+@keyframes desplazar_abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes desplazar_izquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes desplazar_img_derecha {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*--------------Contenedor para los errores de las validaciones en JS  -------------------------*/
+.error {
+  display: none;
+  margin-top: 20px;
+  border-radius: 3px;
+  background: #ce1818;
+  color: #fff;
+  padding: 15px 10px;
+  padding-left: 40px;
+  width: 25%;
+}
+
+@media screen and (max-width: 960px) {
+  .error {
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 5%;
+    width: 100%;
+  }
+}
+
+
