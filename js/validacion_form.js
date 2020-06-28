@@ -4,8 +4,7 @@
     nombre = formulario.nombre, // Creo la variable nombre y lo enlazo al formulario
     correo = formulario.correo, // Creo la variable correo y lo enlazo al formulario
     mensaje = formulario.mensaje, // Creo la variable mensaje y lo enlazo al formulario
-  errores = document.getElementById("errores"); // Accedo al contendor con ID errores.
-
+    errores = document.getElementById("errores"); // Accedo al contendor con ID errores.
   //Validaciones sencillas de campos
   function validarNombre(e) {
     if (nombre.value == null || nombre.value == "") {

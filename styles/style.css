@@ -192,6 +192,12 @@ header .contenedor-texto .texto .profesion {
   color: #636363;
 }
 
+.lista{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
 /* ---------- FOOTER ---------- */
 footer .contacto {
   padding: 60px 0;
