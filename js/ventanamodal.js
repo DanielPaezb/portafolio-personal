@@ -4,6 +4,8 @@ if(document.getElementById("boton--modal")){
     var span = document.getElementsByClassName("close")[0];
     var body = document.getElementsByTagName("body")[0];
 
+    
+
     boton.onclick = function() {
         modal.style.display = "block";
         body.style.position = "static";
