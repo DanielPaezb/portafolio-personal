@@ -87,7 +87,7 @@ header .contenedor-texto .texto .profesion {
   line-height: 25px;
 }
 
-/* ---------- CONTENIDO PRINCIPAL ---------- */
+/* ---------------------------------------- CONTENIDO PRINCIPAL ------------------------------------------- */
 .main .contenedor {
   /* Permite que al llegar al límite del contenedor y que sea visible la foto */
   overflow: visible;
@@ -132,7 +132,7 @@ header .contenedor-texto .texto .profesion {
   text-decoration: underline;
 }
 
-/* ---------- TRABAJOS ---------- */
+/* ------------------------------------------ TRABAJOS --------------------------------------------- */
 
 .main .trabajos {
   background: #f2f2f2;
@@ -191,6 +191,11 @@ header .contenedor-texto .texto .profesion {
   font-size: 14px;
   color: #636363;
 }
+
+.logbook--img{
+  width: 165px;
+  height: 165px;
+}
 /*------------------------------------ HABILIDADES TÉCNICAS ------------------------------------*/
 .lista{
   display: flex;
@@ -207,6 +212,7 @@ header .contenedor-texto .texto .profesion {
   background-color: #1da1f2;
   border-radius: 5px;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
 .btn-li:hover{
@@ -221,14 +227,14 @@ header .contenedor-texto .texto .profesion {
   display: none; 
   position: fixed; 
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%; 
   overflow: auto; 
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .boton--modal-clase{
@@ -417,6 +423,7 @@ footer .redes-sociales .vkontakte:hover {
   }
 }
 
+
 @media screen and (max-width: 348px) {
   header .menu {
     /* --- Flexbox para acomodar textos --- */
@@ -442,6 +449,33 @@ footer .redes-sociales .vkontakte:hover {
     line-height: 20px;
   }
 }
+
+/*------------------------------ RESPONSIVE DESIGN LISTA VENTANA MODAL --------------------------------*/
+@media screen and (max-width: 500px) {
+  
+  .btn-li{
+    width: 90%;
+    font-size: 13px;
+  }
+
+  .btn-li:hover{
+    font-size: 18px;
+    border-bottom: 2px solid #ff7514;
+   }
+
+  .contenedor--modal .contenido--modal{
+    width: 80%;
+    border-radius: 10px;
+  }
+}
+
+/*------------------------------ RESPONSIVE DESIGN PARA IMG TRABAJOS --------------------------------*/
+@media screen and (max-width: 800px) {
+  .logbook--img{
+    height: 100px;
+  } 
+}
+
 
 @media screen and (max-width: 300px) {
   header .menu {
@@ -474,7 +508,7 @@ footer .redes-sociales .vkontakte:hover {
   }
 }
 
-/* ------ ANIMACIONES KEYFREAMES ------ */
+/* -------------------------------------- ANIMACIONES KEYFREAMES ---------------------------------------------- */
 
 @keyframes desplazar_abajo {
   0% {
