@@ -341,7 +341,7 @@ footer .contacto .formulario .boton:hover {
   background: #387bea;
 }
 
-/* ---------- FOOTER REDES SOCIALES ---------- */
+/* ---------------------------------------- FOOTER REDES SOCIALES ------------------------------------ */
 
 footer .redes-sociales {
   background: #1e2b38;
@@ -359,7 +359,7 @@ footer .redes-sociales a {
   width: 100px;
   display: block;
   padding: 15px 0;
-  border-radius: 3px;
+  border-radius: 10px;
   font-size: 30px;
   margin: 0 20px;
 }
@@ -388,6 +388,10 @@ footer .redes-sociales .likedln:hover {
 
 footer .redes-sociales .vkontakte:hover {
   background: #45668e;
+}
+
+footer .redes-sociales .whatsapp:hover {
+  background: #075e54;
 }
 
 /* -------- RESPONSIVE DESIGN -------- */
