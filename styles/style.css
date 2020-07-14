@@ -87,6 +87,20 @@ header .contenedor-texto .texto .profesion {
   line-height: 25px;
 }
 
+.curriculum--vitae{
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.curriculum--vitae:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
 /* ---------------------------------------- CONTENIDO PRINCIPAL ------------------------------------------- */
 .main .contenedor {
   /* Permite que al llegar al límite del contenedor y que sea visible la foto */
