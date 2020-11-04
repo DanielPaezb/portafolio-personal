@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.navigation-bar{
+  display: none;
+}
+
+.contenedor-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  position: sticky;
+  border-bottom: 1px solid #423940;
+  padding: 0 15px;
+  z-index: 10;
+}
+
+.contenedor-header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-header .brand-logo a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700px;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.contenedor-header .nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor-header .nav-bar ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.contenedor-header .nav-bar ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 75px;
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  position: relative;
+}
+
+.contenedor-header .fixed .nav-bar ul li a{
+  color: #fff;
+}
+
+.contenedor-header .nav-bar ul li a::before{
+  content: '';
+  height: 3px;
+  background-color: #f0f0f0;
+  width: 0%;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  transition: all .5s ease;
+}
+
+.contenedor-header .nav-bar ul li a:hover::before{
+  width: 100%;
+  left: 0;
+}
+
+.contenedor-header .nav-bar ul li a.active::before{
+  width: 100%;
+  left: 0;
+}

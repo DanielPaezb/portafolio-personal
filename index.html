@@ -6,126 +6,44 @@
     <meta name="description" content="Bienvendo a mi página web, este es mi portafolio personal."/>
     <meta name="keywords" content="Portafolio, diseño web, página web, diseñar página web, ingeniero electrónico"/>
     <meta name="author" content="Daniel Páez, danielcamilo_@hotmail.com"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/header.css"/>
     <link rel="shortcut icon" href="icon/icon.ico" type="image/x-icon">
     <title>Inicio: Portafolio</title>
   </head>
   <body>
-    <header>
-      <div class="contenedor">
-        <nav class="menu">
-          <a href="#acercaDe">Acerca de</a>
-          <a href="#Trabajos">trabajos</a>
-          <a href="#cont">Contacto</a>
-        </nav>
-        <div class="contenedor-texto">
-          <div class="texto">
-            <h1 class="nombre">Daniel Páez</h1>
-            <h2 class="profesion">Ing. Electrónico</h2>
-            <a class="curriculum--vitae" download="Hoja_de_vida" href="https://drive.google.com/file/d/1Ol0Mpk2MdNAYU3sDfLANqWZe3TZhDMKY/view?usp=sharing" title="Hoja de vida">Descargar CV</a>
+    <header class="contenedor-header">
+      <div class="container">
+        <div class="row">
+          <div class="brand-logo">
+            <a href="" class="logo">Programmer</a>
+          </div>
+          <input class="navigation-bar" type="checkbox" id="nav-toggle">
+          <label for="nav-toggle">
+            <span class="hamburguer"></span>
+          </label>
+          <div class="nav-bar">
+            <ul>
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about"              >About</a></li>
+              <li><a href="#services"           >Services</a></li>
+              <li><a href="#portfolio"          >Portfolio</a></li>
+              <li><a href="#contact"           >Contact</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </header>
-    <section class="main">
-      <section class="acerca-de" id="acercaDe">
-        <div class="contenedor">
-          <div class="foto">
-            <img
-              src="https://i.ibb.co/yFn4LRx/foto.png"
-              width="115"
-              height="115"
-              alt="Daniel Páez"
-            />
-          </div>
-          <div class="texto">
-            <h3 class="titulo">Acerca de mí</h3>
-            <p>
-              <span class="bold">Ingeniero electrónico </span>fuertemente enfocado al desarrollo <span class="bold">Frontend</span>, con la habilidad
-              de completar tareas de forma precisa en un entorno rápido con plazos de entrega conflictivos, haciendo uso de métodología ágil <span class="bold">SCRUM</span>, <span class="bold">experiencia en 
-              diferentes tecnologías de desarrollo web</span> y electrónica digital, me motiva una constante pasión por seguir aprendiendo de las nuevas tecnologías
-              que surgen cada día y seguir creciendo profesionalmente, aportando ideas, estrategias y/o mejoras que permitan dar valor agregado.
-            </p>
-          </div>
-          <div class="texto">
-            <h3 class="titulo">Habilidades Técnicas</h3>
-            <button id='boton--modal' class="boton--modal-clase">Click me</button>
-            <div class="contenedor--modal" id="cont--modal"> 
-              <div class="contenido--modal">
-              <span class="close">×</span>
-              <p>
-                <li class="lista"><a class="btn-li" href="#">HTML5</a></li>
-                <li class="lista"><a class="btn-li" href="#">CSS</a></li>
-                <li class="lista"><a class="btn-li" href="#">SQL</a> </li>
-                <li class="lista"><a class="btn-li" href="#">Python</a> </li>
-                <li class="lista"><a class="btn-li" href="#">C++</a></li>
-                <li class="lista"><a class="btn-li" href="#">Git Command Line</a></li>
-                <li class="lista"><a class="btn-li" href="#">Github</a></li>
-                <li class="lista"><a class="btn-li" href="#">DevOps</a></li>
-                <li class="lista"><a class="btn-li" href="#">Electrónica</a></li>
-                <li class="lista"><a class="btn-li" href="#">React muy básico</a></li>
-              </p>
-              </div>
-          </div>
-        </div>
-      </section>
-      <section class="trabajos" id="Trabajos">
-        <div class="contenedor">
-          <h3 class="titulo">Trabajos web realizados </h3>
-          <div class="contenedor-trabajos">
-            <div class="trabajo">
-              <div class="thumb">
-                <a href="https://senaceet.github.io/netflix-DanielPaezb/"><img src="https://i.ibb.co/WVnBgsn/netflix-n-logo-png.png" alt="Logo Netflix" /></a>
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Clon Netflix</p>
-                <p class="categoria">HTML - CSS - Js</p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <a href="https://senaceet.github.io/gui-proyecto-logbook/"><img class="logbook--img" src="https://i.ibb.co/5vWS6Kx/logbook.png" alt="LogoLogbook" /></a>
-              </div>
-              <div class="descripcion">
-                <p class="nombre">LogBook</p>
-                <p class="categoria">HTML - CSS - Js</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- *******************************Fin del header*************************** -->
+    <section id="home" class="home-intro">
+      <div class="overlay-intro"></div>
     </section>
-    <footer>
-        <section class="contacto" id="cont">
-            <div class="contenedor">
-                <h3 class="titulo">Contactáctame</h3>
-                <form class="formulario" id="form" action="" method="">
-                    <input type="text"   name="nombre" placeholder="Nombre"> 
-                    <input type="email"  name="correo" placeholder="Email" > 
-                    <textarea name="mensaje" placeholder="Deja tu mensaje:"></textarea>
-                    <input class="boton" type="submit" value="Enviar">
-                </form>
-            </div>
-            <div class="error" id="errores">
-            </div>
-        </section>
-      <section class="redes-sociales">
-        <div class="contenedor">
-          <a class="facebook" href="https://www.facebook.com/daniel.paezb?ref=bookmarks" target="blank_"><i class="icon-facebook"></i></a>
-          <a class="instagram" href="https://www.instagram.com/daniel.paezb/" target="blank_"><i class="icon-instagram"></i></a>
-          <a class="github" href="https://github.com/DanielPaezb"><i class="icon-github" target="blank_"></i></a>
-          <a class="likedln" href="https://www.linkedin.com/in/daniel-camilo-p%C3%A1ez-86a150127/" target="blank_"><i class="icon-linkedin"></i></a>
-          <a class="vkontakte" href="https://vk.com/d.paezb" target="blank_"><i class="icon-vk-alternitive"></i></a>
-          <a class="whatsapp" href="https://wa.me/3144319820/?text=%C2%A1Hola%20Daniel!" target="blank_"><i class="icon-mail"></i></a>
-        </div>
-      </section>
-    </footer>
-    <script src="js/validacion_form.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/scroll.js"></script>
-    <script src="./js/ventanamodal.js"></script>
+
+
+
+
+
   </body>
 </html>
