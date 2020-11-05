@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-title h2{
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.section-title h2::before{
+  content: '';
+  height: 2px;
+  background: #ff5722;
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all .5s ease;
+}
+
+.section-title h2:hover::before{
+  width: 100%;
+  
+}
+
+
+
+.navigation-bar{
+  display: none;
+}
+
+.contenedor-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  position: sticky;
+  border-bottom: 1px solid #423940;
+  padding: 0 15px;
+  z-index: 10;
+}
+
+.contenedor-header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-header .brand-logo a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700px;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.contenedor-header .nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor-header .nav-bar ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.contenedor-header .nav-bar ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 75px;
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  position: relative;
+}
+
+.contenedor-header .fixed .nav-bar ul li a{
+  color: #fff;
+}
+
+.contenedor-header .nav-bar ul li a::before{
+  content: '';
+  height: 3px;
+  background-color: #f0f0f0;
+  width: 0%;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  transition: all .5s ease;
+}
+
+.contenedor-header .nav-bar ul li a:hover::before{
+  width: 100%;
+  left: 0;
+}
+
+.contenedor-header .nav-bar ul li a.active::before{
+  width: 100%;
+  left: 0;
+}
+
+/* **************************** Estilos para el home ***************************/
+.homeintro{
+  background-image: url("https://i.ibb.co/87j0qn3/bgFooter.jpg");
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.homeintro .intro-content-in{
+  text-align: center;
+  position: relative;
+}
+
+.homeintro .overlay-intro{
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .9;
+}
+
+.homeintro .container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeintro .title-intro{
+  color: #f5f5f5;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.homeintro .sub-intro{
+  color: #f5f5f5;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/* **************************** Estilos para la sección about us ***************************/
+about-me{
+  padding: 100px 15px;
+  background: #FFF;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.about-me .section-title p .small{
+  display: block;
+  font-size: 15px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-me .about-content .img{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.about-me .about-content .img img{
+  width: 100%;
+  display: block;
+}
+
+.about-me .about-content .text{
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+
+
+.about-me .about-content .text h4{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  color: #000;
+  cursor: pointer;
+  border-bottom: 2px solid #000;
+}
+
+.about-me .about-content .text h6{
+  font-size: 18px;
+  font-weight: 400;
+
+}
