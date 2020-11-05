@@ -1,3 +1,5 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
 * {
   box-sizing: border-box;
 }
@@ -12,18 +14,24 @@ body {
   overflow-x: hidden;
 }
 
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.section-title{
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px;
+}
+
+.section-title {
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 40px;
 }
 
-.section-title h2{
+.section-title h2 {
   display: inline-block;
   font-size: 35px;
   text-transform: uppercase;
@@ -33,8 +41,8 @@ body {
   position: relative;
 }
 
-.section-title h2::before{
-  content: '';
+.section-title h2::before {
+  content: "";
   height: 2px;
   background: #ff5722;
   position: absolute;
@@ -43,17 +51,14 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.section-title h2:hover::before{
+.section-title h2:hover::before {
   width: 100%;
-  
 }
 
-
-
-.navigation-bar{
+.navigation-bar {
   display: none;
 }
 
@@ -103,33 +108,33 @@ body {
   position: relative;
 }
 
-.contenedor-header .fixed .nav-bar ul li a{
+.contenedor-header .fixed .nav-bar ul li a {
   color: #fff;
 }
 
-.contenedor-header .nav-bar ul li a::before{
-  content: '';
+.contenedor-header .nav-bar ul li a::before {
+  content: "";
   height: 3px;
   background-color: #f0f0f0;
   width: 0%;
   position: absolute;
   right: 0;
   bottom: 8px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.contenedor-header .nav-bar ul li a:hover::before{
+.contenedor-header .nav-bar ul li a:hover::before {
   width: 100%;
   left: 0;
 }
 
-.contenedor-header .nav-bar ul li a.active::before{
+.contenedor-header .nav-bar ul li a.active::before {
   width: 100%;
   left: 0;
 }
 
 /* **************************** Estilos para el home ***************************/
-.homeintro{
+.homeintro {
   background-image: url("https://i.ibb.co/87j0qn3/bgFooter.jpg");
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -143,23 +148,23 @@ body {
   background-size: cover;
 }
 
-.homeintro .intro-content-in{
+.homeintro .intro-content-in {
   text-align: center;
   position: relative;
 }
 
-.homeintro .overlay-intro{
-  background-color: rgba(0,0,0,0.7);
+.homeintro .overlay-intro {
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .9;
+  opacity: 0.9;
 }
 
-.homeintro .container{
+.homeintro .container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -167,29 +172,29 @@ body {
   justify-content: center;
 }
 
-.homeintro .title-intro{
+.homeintro .title-intro {
   color: #f5f5f5;
   font-weight: 600;
   font-size: 4rem;
 }
 
-.homeintro .sub-intro{
+.homeintro .sub-intro {
   color: #f5f5f5;
   font-weight: 300;
   font-size: 1.5rem;
 }
 
 /* **************************** Estilos para la sección about us ***************************/
-about-me{
+about-me {
   padding: 100px 15px;
-  background: #FFF;
+  background: #fff;
 }
 
-.text-uppercase{
+.text-uppercase {
   text-transform: uppercase;
 }
 
-.about-me .section-title p .small{
+.about-me .section-title p .small {
   display: block;
   font-size: 15px;
   color: #838383;
@@ -197,24 +202,23 @@ about-me{
   letter-spacing: 2px;
 }
 
-.about-me .about-content .img{
+.about-me .about-content .img {
   flex: 0 0 33.33%;
   max-width: 33.33%;
 }
 
-.about-me .about-content .img img{
+.about-me .about-content .img img {
   width: 100%;
   display: block;
 }
 
-.about-me .about-content .text{
+.about-me .about-content .text {
   flex: 0 0 66.66%;
   max-width: 66.66%;
   padding-left: 30px;
 }
 
-
-.about-me .about-content .text h4{
+.about-me .about-content .text h4 {
   font-size: 25px;
   font-weight: 600;
   margin: 0 0 5px;
@@ -223,8 +227,85 @@ about-me{
   border-bottom: 2px solid #000;
 }
 
-.about-me .about-content .text h6{
+.about-me .about-content .text h6 {
   font-size: 18px;
   font-weight: 400;
-
+  margin: 0 0 15px;
+  color: #000;
 }
+
+.about-me .about-content .text h6 span {
+  color: #ff5722;
+  cursor: grab;
+  font-weight: 600;
+}
+
+.about-me .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #838383;
+  margin: 0 0 20px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info .list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: 0 0 calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #2e1e1e;
+  padding-bottom: 10px;
+}
+
+.info .list label {
+  padding-right: 10px;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* **************************** Estilos para el redes sociales ***************************/
+.social-media{
+  padding-top: 40px;
+}
+
+.social-media a{
+  height: 30px;
+  width: 30px;
+  background-color: #2e1e1e;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid #000;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 1px;
+  transition: all .5s ease;
+}
+
+.social-media a:hover{
+  background-color: transparent;
+}
+
+.social-media a .fa{
+  transition: all .2s ease;
+  color: #fff;
+  font-size: 14px;
+}
+
+.social-media a:hover .fa{
+  color: #000;
+}
+
+
+
+
+
+
+
