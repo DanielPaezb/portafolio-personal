@@ -73,6 +73,7 @@ body {
   border-bottom: 1px solid #423940;
   padding: 0 15px;
   z-index: 10;
+  height: 67px;
 }
 
 .contenedor-header .row {
@@ -117,7 +118,7 @@ body {
 .contenedor-header .nav-bar ul li a::before {
   content: "";
   height: 3px;
-  background-color: #f0f0f0;
+  background-color: #ff5722;
   width: 0%;
   position: absolute;
   right: 0;
@@ -440,3 +441,103 @@ about-me {
 }
 
 /* ************************* Estilos para sección skills  ************************* */
+.span-color{
+  color: #fff;
+  font-weight: 300;
+  background: #ff5722;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.skills{
+  padding: 100px 15px;
+  background-color: #fff;
+}
+
+.skills .skills-content{
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 40px;
+  line-height: 30px;
+}
+
+.skills .image{
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+}
+
+.skills .image img{
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.skills .skills-content .section-title{
+  text-align: center;
+}
+
+.skills .skills-content .section-title p{
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #838383;
+  margin:  0 0 30px;
+}
+
+.skills .skills-content .skills-box{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 36px;
+}
+
+.skills .skills-content .skills-box h6{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 8px;
+  cursor: grab;
+}
+
+.skills .skills-content .skills-box h6:hover{
+  transform: scale(1.1);
+  transition: all .5s ease;
+}
+
+.skills .skills-content .skills-box .skills-bar{
+  height: 14px;
+  background: #eee;
+  border-radius: 10px;
+  position: relative;
+}
+
+.skills-in-the-bar{
+  background-color: #ff5722;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  cursor: zoom-in;
+}
+
+.skills-in-the-bar span{
+  color: #838383;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
