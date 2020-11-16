@@ -1,261 +1,397 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bienvendo a mi página web, este es mi portafolio personal."/>
-    <meta name="keywords" content="Portafolio, diseño web, página web, diseñar página web, ingeniero electrónico"/>
-    <meta name="author" content="Daniel Páez, danielcamilo_@hotmail.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="shortcut icon" href="icon/icon.ico" type="image/x-icon">
-    <title>Inicio: Portafolio</title>
-  </head>
-  <body>
-    <header class="contenedor-header">
-      <div class="container">
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bienvendo a mi página web, este es mi portafolio personal." />
+  <meta name="keywords" content="Portafolio, diseño web, página web, diseñar página web, ingeniero electrónico" />
+  <meta name="author" content="Daniel Páez, danielcamilo_@hotmail.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="shortcut icon" href="icon/icon.ico" type="image/x-icon">
+  <title>Portafolio | Daniel Páez </title>
+</head>
+
+<body>
+  <header class="contenedor-header">
+    <div class="container">
+      <div class="row">
+        <div class="brand-logo">
+          <a href="" class="logo">&#60;DC/&#62;</a>
+        </div>
+        <input class="navigation-bar" type="checkbox" id="nav-toggle">
+        <label for="nav-toggle">
+          <span class="hamburguer"></span>
+        </label>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- *******************************Fin del header*************************** -->
+  <section id="home" class="homeintro">
+    <div class="overlay-intro"></div>
+    <div class="intro-content-in">
+      <div class="cell">
+        <div class="container">
+          <h1 class="title-intro">Welcome to my website, I'm Dany</h1>
+          <h5 class="sub-intro">A front-End Web Developer, and autodidact lerner :)</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- *******************************Fin del home*************************** -->
+  <section class="about-me">
+    <div class="container">
+      <div class="row">
+        <div class="section-title" id="about">
+          <h2>&#60;About Me&#62;</h2>
+          <p class="small text-uppercase">Information About Me</p>
+        </div>
         <div class="row">
-          <div class="brand-logo">
-            <a href="" class="logo">&#60;DC/&#62;</a>
-          </div>
-          <input class="navigation-bar" type="checkbox" id="nav-toggle">
-          <label for="nav-toggle">
-            <span class="hamburguer"></span>
-          </label>
-          <div class="nav-bar">
-            <ul>
-              <li><a href="#home" class="active">Home</a></li>
-              <li><a href="#about"              >About</a></li>
-              <li><a href="#services"           >Services</a></li>
-              <li><a href="#portfolio"          >Portfolio</a></li>
-              <li><a href="#contact"           >Contact</a></li>
-            </ul>
+          <div class="about-content">
+            <div class="row">
+              <div class="img">
+                <img src="https://i.ibb.co/hmHqgsy/bg.png" alt="about me">
+              </div>
+              <div class="text">
+                <h4>This is Daniel Camilo Páez</h4>
+                <h6>A <span>front-End</span> Web Developer</h6>
+                <p>Ingeniero electrónico,con enfoque al desarrollo Frontend, habilidades para completar tareas de
+                  forma precisa en un entorno rápido con plazos de entrega conflictivos, experiencia CSS3, HTML5 y JS,
+                  así como
+                  en electrónica digital, me motiva una constante pasión por seguir aprendiendo de las nuevas
+                  tecnologías que
+                  surgen cada día y seguir creciendo profesionalmente, aportando ideas, estrategias y/o mejoras que
+                  permitan
+                  dar valor agregado a cada uno de los proyectos que estén a mi cargo, persona honesta, ética y puntual.
+                </p>
+                <div class="info">
+                  <div class="list">
+                    <label>Email: </label>
+                    <p>dcpaez595@misena.edu.co</p>
+                  </div>
+                  <div class="list">
+                    <label>Phone: </label>
+                    <p>&#40;+57&#41; 312-538-2068</p>
+                  </div>
+                  <div class="list">
+                    <label>Residence: </label>
+                    <p>Bogota D.C</p>
+                  </div>
+                  <div class="list">
+                    <label>Country: </label>
+                    <p>Colombia</p>
+                  </div>
+                </div>
+                <div class="social-media">
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-github"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                  <a href=""><i class="fa fa-whatsapp"></i></a>
+                  <a href=""><i class="fa fa-vk"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- *******************************Fin del header*************************** -->
-    <section id="home" class="homeintro">
-      <div class="overlay-intro"></div>
-      <div class="intro-content-in">
-        <div class="cell">
-          <div class="container">
-            <h1 class="title-intro">Welcome to my website, I'm Dany</h1>
-            <h5 class="sub-intro">A front-End Web Developer, and autodidact lerner :)</h5>
+    </div>
+  </section>
+  <!-- ******************************* Fin redes sociales *************************** -->
+  <section class="message-text">
+    <div class="container">
+      <div class="row">
+        <div class="text">
+          <h2>A Web Developer, click the button to download</h2>
+        </div>
+        <div class="button">
+          <a href=""><i class="fas fa-cloud-download-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ******************************* Fin de sección CV *************************** -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <h2>&#60;Services&#62;</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="service-contents">
+          <div class="box">
+            <div class="icons">
+              <i class="fa fa-mobile"></i>
+            </div>
+            <h5>Responsive Web Design</h5>
+            <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
+              deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
+              full responsivos.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icons">
+              <i class="fa fa-book"></i>
+            </div>
+            <h5>Creativity</h5>
+            <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
+              deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
+              full responsivos.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-award"></i>
+            </div>
+            <h5>Testing for perfection</h5>
+            <p>Hoy en día con el avance de la tecnología, todos los diseños de <span class="span-color">Sitios
+                Web</span>
+              deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
+              full responsivos.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h5>Lorem</h5>
+            <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
+              deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
+              full responsivos.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-code"></i>
+            </div>
+            <h5>Lorem</h5>
+            <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
+              deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
+              full responsivos.
+            </p>
+          </div>
+          <div class="box">
+            <div class="icons">
+              <i class="fas fa-cog"></i>
+            </div>
+            <h5>Lorem</h5>
+            <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
+              deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
+              full responsivos.
+            </p>
           </div>
         </div>
-      </div> 
-    </section>
-    <!-- *******************************Fin del home*************************** -->
-    <section class="about-me" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2>&#60;About Me&#62;</h2>
-            <p class="small text-uppercase">Information About Me</p>
+      </div>
+    </div>
+  </section>
+  <!-- *************************** Fin de sección services *************************** -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="skills-content">
+          <div class="row">
+            <div class="section-title">
+              <h2>&#60;Professional skills&#62;</h2>
+              <p>Estudié una tecnología en <span class="span-color">Desarrollo De Software</span>
+                por qué me encanta la programación y el diseño web, así mismo, cada día hay un montón
+                de nuevas tecnologías de que hacen su debut mejorando las ya existentes como <span
+                  class="span-color">Frameworks</span>
+                orientados a <span class="span-color">JavaScript</span> y UI/UX, que hacen que desarrollar entornos Web
+                sea cada vez más cómodo.
+              </p>
+            </div>
           </div>
           <div class="row">
-            <div class="about-content">
-              <div class="row">
-                <div class="img">
-                  <img src="https://i.ibb.co/hmHqgsy/bg.png" alt="about me">
+            <div class="skills-box">
+              <h6>Front-End</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 50%;">
+                  <span>50%</span>
                 </div>
-                <div class="text">
-                  <h4>This is Daniel Camilo Páez</h4>
-                  <h6>A <span>front-End</span> Web Developer</h6>
-                  <p>Ingeniero electrónico,con enfoque al desarrollo Frontend, habilidades para completar tareas de
-                    forma precisa en un entorno rápido con plazos de entrega conflictivos, experiencia CSS3, HTML5 y JS, así como
-                    en electrónica digital, me motiva una constante pasión por seguir aprendiendo de las nuevas tecnologías que
-                    surgen cada día y seguir creciendo profesionalmente, aportando ideas, estrategias y/o mejoras que permitan
-                    dar valor agregado a cada uno de los proyectos que estén a mi cargo, persona honesta, ética y puntual.</p>
-                  <div class="info">
-                    <div class="list">
-                      <label>Email: </label>
-                      <p>dcpaez595@misena.edu.co</p>
-                    </div>
-                    <div class="list">
-                      <label>Phone: </label>
-                      <p>&#40;+57&#41; 312-538-2068</p>
-                    </div>
-                    <div class="list">
-                      <label>Residence: </label>
-                      <p>Bogota D.C</p>
-                    </div>
-                    <div class="list">
-                      <label>Country: </label>
-                      <p>Colombia</p>
-                    </div>
-                  </div>
-                  <div class="social-media">
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-github"></i></a>
-                    <a href=""><i class="fa fa-instagram"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-vk"></i></a>
-                  </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h6>Databases - SQL</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 50%;">
+                  <span>50%</span>
                 </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h6>JavaScript</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 30%;">
+                  <span>30%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h6>Python</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 20%;">
+                  <span>20%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h6>DevOps</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 43%;">
+                  <span>33%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h6>C++</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 50%;">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h6>React</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 20%;">
+                  <span>20%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h6>Electrónica</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 70%;">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills-box">
+              <h6>UI/UX</h6>
+              <div class="skills-bar">
+                <div class="skills-in-the-bar" style="width: 60%;">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="https://i.ibb.co/WBbf5p0/software.jpg" alt="skills">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <h2>My Portfolio Works</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="comment-portfolio">
+          <p>
+            Estos son algunos de los <span class="span-color">proyectos</span> que he codificado a lo largo del aprendizaje 
+            autodidacta y mediante el estudio de una tecnología en programación de <span class="span-color">Software</span>.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="portfolio-gallery">
+          <div class="item" data-id="react-work">
+            <div class="inner">
+              <img src="https://i.ibb.co/6WDrDwt/Netflix.jpg" alt="netflix">
+              <div class="overlay">
+                <a href="https://senaceet.github.io/netflix-DanielPaezb/" target="_blank"><span class="fa fa-plus"></span></a>
+                <h4>Netflix Educational Clone</h4>
+                <h4>HTML - CSS - JS</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-id="html-csss-js">
+            <div class="inner">
+              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
+              <div class="overlay">
+                <a href="#"><span class="fa fa-plus"></span></a>
+                <h4>React Works</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-id="fashion">
+            <div class="inner">
+              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
+              <div class="overlay">
+                <a href="#"><span class="fa fa-plus"></span></a>
+                <h4>React Works</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-id="Photos">
+            <div class="inner">
+              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
+              <div class="overlay">
+                <a href="#"><span class="fa fa-plus"></span></a>
+                <h4>React Works</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-id="books">
+            <div class="inner">
+              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
+              <div class="overlay">
+                <a href="#"><span class="fa fa-plus"></span></a>
+                <h4>React Works</h4>
+              </div>
+            </div>
+          </div>
+          <div class="item" data-id="fashion">
+            <div class="inner">
+              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
+              <div class="overlay">
+                <a href="#"><span class="fa fa-plus"></span></a>
+                <h4>React Works</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ******************************* Fin redes socilaes *************************** -->
-    <section class="message-text">
-      <div class="container">
-        <div class="row">
-          <div class="text">
-            <h2>A Web Developer, click the button to download</h2>
-          </div>
-          <div class="button">
-            <a href="" download="">Download CV</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ******************************* Fin de sección CV *************************** -->
-    <section class="services" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="section-title text-center">
-            <h2>&#60;OUR SERVICES&#62;</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="service-contents">
-            <div class="box">
-              <div class="icons">
-                <i class="fa fa-mobile"></i>
-              </div>
-              <h5>Responsive Web Design</h5>
-              <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
-                 deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
-                 full responsivos.
-              </p>
-            </div>
-            <div class="box">
-              <div class="icons">
-                <i class="fa fa-book"></i>
-              </div>
-              <h5>Creativity</h5>
-              <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
-                 deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
-                 full responsivos.
-              </p>
-            </div>
-            <div class="box">
-              <div class="icons">
-                <i class="fas fa-award"></i>
-              </div>
-              <h5>Testing for perfection</h5>
-              <p>Hoy en día con el avance de la tecnología, todos los diseños de <span class="span-color">Sitios Web</span>
-                 deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
-                 full responsivos.
-              </p>
-            </div>
-            <div class="box">
-              <div class="icons">
-                <i class="fas fa-lightbulb"></i>
-              </div>
-              <h5>Lorem</h5>
-              <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
-                 deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
-                 full responsivos.
-              </p>
-            </div>
-            <div class="box">
-              <div class="icons">
-                <i class="fas fa-code"></i>
-              </div>
-              <h5>Lorem</h5>
-              <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
-                 deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
-                 full responsivos.
-              </p>
-            </div>
-            <div class="box">
-              <div class="icons">
-                <i class="fas fa-cog"></i>
-              </div>
-              <h5>Lorem</h5>
-              <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
-                 deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
-                 full responsivos.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- *************************** Fin de sección services *************************** -->
-    <section class="skills" id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="skills-content">
-            <div class="row">
-              <div class="section-title">
-                <h2>&#60;Professional skills&#62;</h2>
-                <p>Estudié una tecnología en <span class="span-color">Desarrollo De Software</span>
-                   por qué me encanta la programación y el diseño web, así mismo, cada día hay un montón
-                   de nuevas tecnologías de que hacen su debut mejorando las ya existentes como <span class="span-color">Frameworks</span>
-                   orientados a <span class="span-color">JavaScript</span> y  UI/UX, que hacen que desarrollar entornos Web sea cada vez más cómodo.
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="skills-box">
-                <h6>Front-End</h6>
-                <div class="skills-bar">
-                  <div class="skills-in-the-bar" style="width: 78%;">
-                    <span>78%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="skills-box">
-                <h6>Databases - SQL</h6>
-                <div class="skills-bar">
-                  <div class="skills-in-the-bar" style="width: 68%;">
-                    <span>68%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="skills-box">
-                <h6>JavaScript</h6>
-                <div class="skills-bar">
-                  <div class="skills-in-the-bar" style="width: 58%;">
-                    <span>58%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="skills-box">
-                <h6>Python</h6>
-                <div class="skills-bar">
-                  <div class="skills-in-the-bar" style="width: 48%;">
-                    <span>48%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="skills-box">
-                <h6>DevOps</h6>
-                <div class="skills-bar">
-                  <div class="skills-in-the-bar" style="width: 38%;">
-                    <span>38%</span>
-                  </div>
-                </div>
-              </div>
+    </div>
+  </section>
+  <footer class="footer-portfolio">
+    <div class="footer--icon">
+      <a href="index.html" class="logo">&#60;DC/&#62;</a>
+    </div>
+    <div class="footer--contact">
+      <ul>
+        <li>Email: dcpaez595@misena.edu.co</li>
+        <li>+57 3125382868</li>
+        <li>Bogotá D.C</li>
+      </ul>
+    </div>
+    <div class="footer--name">
+        <h2>Daniel Camilo Páez Bonilla</h2>
+    </div>
+    <div class="footer--date">
+       <p>2020</p>
+    </div>
+  </footer>
+  
+  <script src="js/Scripts.js"></script>
+  <script src="https://kit.fontawesome.com/e4acb4060a.js"></script>
+</body>
 
-            </div>
-          </div>
-          <div class="image">
-            <img src="https://i.ibb.co/WBbf5p0/software.jpg" alt="skills">
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <script src="https://kit.fontawesome.com/e4acb4060a.js"></script>
-  </body>
 </html>
