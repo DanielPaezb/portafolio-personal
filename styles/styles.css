@@ -480,6 +480,8 @@ about-me {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: #f2f2f2;
+  border-radius: 150px;
 }
 
 .skills .image img{
