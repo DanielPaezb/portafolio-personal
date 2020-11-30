@@ -1,0 +1,128 @@
+/** ------------------- Responsive Header ------------------- **/
+
+@media screen and (max-width: 742px) {
+  .contenedor-header .brand-logo a {
+    font-size: 20px;
+  }
+
+  .contenedor-header .nav-bar ul li {
+    margin-left: 30px;
+  }
+
+  .contenedor-header .nav-bar ul li a {
+    font-size: 15px;
+    line-height: 75px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px;
+  }
+
+  /* **************************** Estilos para el home ***************************/
+
+  .homeintro .title-intro {
+    flex-wrap: wrap;
+    font-size: 2rem;
+  }
+
+  .homeintro .sub-intro {
+    font-size: 1.2rem;
+  }
+
+  /**************************** Estilos para servicios *************************/
+ 
+  .services .service-contents .box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    flex: 0 0 calc(100%);
+    max-width: calc(100%);
+  }
+
+  /* ************************* Estilos para sección skills  ************************* */
+  
+  .skills .skills-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .skills .image{
+    display: none;
+  }
+  
+  .skills .image img{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    background: #000;
+  }
+  
+  .skills .skills-content .section-title{
+    text-align: center;
+  }
+  
+  .skills .skills-content .section-title p{
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #838383;
+    margin:  0 0 30px;
+    text-align: justify;
+  }
+  
+  .skills .skills-content .skills-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 36px;
+  }
+  
+  .skills .skills-content .skills-box h6{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0 8px;
+    cursor: grab;
+  }
+  
+  .skills .skills-content .skills-box h6:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+  }
+  
+  .skills .skills-content .skills-box .skills-bar{
+    height: 14px;
+    background: #eee;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .skills-in-the-bar{
+    background-color: #ff5722;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    cursor: zoom-in;
+  }
+  
+  .skills-in-the-bar span{
+    color: #838383;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: -50px;
+    cursor: pointer;
+  }
+}
+
+
