@@ -1,4 +1,3 @@
-/** ------------------- Responsive Header ------------------- **/
 
 @media screen and (max-width: 742px) {
   .contenedor-header .brand-logo a {
@@ -17,7 +16,7 @@
   .container {
     width: 90%;
     max-width: 1200px;
-    margin: 50px;
+    margin: 50px 0;
   }
 
   /* **************************** Estilos para el home ***************************/
@@ -119,6 +118,100 @@
     line-height: 40px;
     width: 90%;
     font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .contenedor-header .brand-logo a {
+    font-size: 20px;
+  }
+
+  .contenedor-header .nav-bar ul li {
+    margin-left: 30px;
+  }
+
+  .contenedor-header .nav-bar ul li a {
+    font-size: 16px;
+    line-height: 75px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px 0;
+  }
+
+  
+
+  /* **************************** Estilos para el home ***************************/
+  .homeintro .title-intro {
+    font-size: 2.3rem;
+  }
+  
+  .homeintro .sub-intro {
+    font-size: 1.4rem;
+  }
+  /**************************** Estilos para servicios *************************/
+
+  .services .service-contents .box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    flex: 0 0 calc(100%);
+    max-width: calc(100%);
+  }
+
+  /* ************************* Estilos para sección skills  ************************* */
+  .skills .skills-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 40px;
+    line-height: 30px;
+  }
+
+  .skills .image {
+    display: none;
+  }
+
+  .skills .image img {
+    display: none;
+  }
+
+  .skills .skills-content .section-title {
+    text-align: center;
+  }
+
+  .skills .skills-content .section-title p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #838383;
+    margin: 0 0 30px;
+    text-align: justify;
+  }
+
+  .skills .skills-content .skills-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 36px;
+  }
+
+  /* --------------------------- * Footer * -------------------------- */
+  .footer-portfolio {
+    width: 100%;
+  }
+
+  .footer--date {
+    width: 100%;
+  }
+
+  .footer--date p {
+    font-size: 15px;
+    width: 50%;
+    padding: 10px;
   }
 }
 
