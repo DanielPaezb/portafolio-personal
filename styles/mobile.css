@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 742px) {
   .contenedor-header .brand-logo a {
     font-size: 20px;
@@ -99,20 +98,20 @@
   }
 }
 
-@media screen and (min-width: 742px){
+@media screen and (min-width: 200px) {
   /* --------------------------- * Portafolio * -------------------------- */
-  .portfolio{
+  .portfolio {
     padding: 100px 7px;
   }
 
-  .portfolio .portfolio-gallery .item{
+  .portfolio .portfolio-gallery .item {
     flex: 0 0 100%;
     max-width: 100%;
     position: relative;
     padding: 8px;
   }
 
-  .comment-portfolio{
+  .comment-portfolio {
     display: flex;
     text-align: center;
     line-height: 40px;
@@ -121,34 +120,18 @@
   }
 }
 
-
 @media screen and (min-width: 600px) {
-  .contenedor-header .brand-logo a {
-    font-size: 20px;
-  }
-
-  .contenedor-header .nav-bar ul li {
-    margin-left: 30px;
-  }
-
-  .contenedor-header .nav-bar ul li a {
-    font-size: 16px;
-    line-height: 75px;
-  }
-
   .container {
     width: 90%;
     max-width: 1200px;
     margin: 50px 0;
   }
 
-  
-
   /* **************************** Estilos para el home ***************************/
   .homeintro .title-intro {
     font-size: 2.3rem;
   }
-  
+
   .homeintro .sub-intro {
     font-size: 1.4rem;
   }
@@ -164,7 +147,7 @@
   }
 
   /* ************************* Estilos para sección skills  ************************* */
-  .skills .skills-content{
+  .skills .skills-content {
     flex: 0 0 100%;
     max-width: 100%;
     padding-right: 40px;
@@ -179,39 +162,37 @@
     display: none;
   }
 
-  .skills .skills-content .section-title {
-    text-align: center;
-  }
-
-  .skills .skills-content .section-title p {
-    padding-top: 20px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    color: #838383;
-    margin: 0 0 30px;
-    text-align: justify;
-  }
-
   .skills .skills-content .skills-box {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 36px;
   }
+}
 
-  /* --------------------------- * Footer * -------------------------- */
-  .footer-portfolio {
-    width: 100%;
+/* --------------------------- menú amburguesa -------------------- */
+@media screen and (min-width: 100px) {
+  .navigation-bar {
+    display: block;
   }
 
-  .footer--date {
+  .nav-bar {
+
     width: 100%;
+    position: absolute;
+    display: none;
+    padding: 0 10px;
   }
 
-  .footer--date p {
-    font-size: 15px;
-    width: 50%;
-    padding: 10px;
+  .ul{
+    background: #000;
   }
 }
 
+.ul--dBlock {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 400px;
+  padding-left: 200px;
+
+}
