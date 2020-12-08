@@ -560,8 +560,6 @@ about-me {
   padding: 100px 7px;
 }
 
-
-
 .portfolio .portfolio-gallery{
   flex: 0 0 100%;
   max-width: 100%;
@@ -571,7 +569,7 @@ about-me {
 
 .portfolio .portfolio-gallery .item{
   flex: 0 0 33.33%;
-  max-width: 33%;
+  max-width: 33.33%;
   position: relative;
   padding: 8px;
 }
