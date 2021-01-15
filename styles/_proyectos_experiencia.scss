@@ -1,0 +1,71 @@
+/* Imports*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
+/* Variables */
+$White-color: #fff;
+$White-color-dark: #f2f2f2;
+$Black-color: #000;
+$Gray-dark: #9f9fa3;
+$Border-color: #0099e5;
+$Font-family: "Source Sans Pro", sans-serif;
+$Font-weight: 500;
+
+.trabajos {
+  flex: 0 0 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: $White-color-dark;
+  justify-content: center;
+
+  &--enlaces {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      margin: 20px;
+      padding: 40px;
+
+      &:hover {
+        animation-name: Rotar-derecha;
+        animation-name: Rotar-izquierda;
+        animation-delay: 0.2s;
+        animation-duration: 1.8s;
+        transition: 2s;
+        border-radius: 10px;
+      }
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      border: 6px solid transparent;
+
+      &:hover {
+        border: 6px solid $Border-color;
+      }
+    }
+  }
+}
+
+/* Animations CSS for Proyectos_ecperiencia */
+
+@keyframes Rotar-derecha {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes Rotar-izquierda {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}

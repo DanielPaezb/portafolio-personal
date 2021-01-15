@@ -1,0 +1,96 @@
+.header {
+  background-image: url("https://i.ibb.co/87j0qn3/bgFooter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  &--menu {
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+
+    ul {
+      display: flex;
+      width: 100%;
+      height: 70px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 3px;
+    }
+
+    li {
+      padding: 30px;
+      list-style: none;
+      display: block;
+      border-radius: 3px;
+
+      &:hover:not(.active) {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-bottom: 3px solid #fff;
+      }
+    }
+
+    a {
+      color: #fff;
+      font-size: 15px;
+      text-decoration: none;
+      padding: 4px; 
+    }
+  }
+
+  &--home {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px ;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+
+    h1 {
+      font-size: 75px;
+      font-weight: 700;
+      animation-name: MoverTextoDerecha;
+      animation-duration: 5s;
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      animation-name: MoverTextoArriba;
+      animation-duration: 1s;
+    }
+  }
+}
+
+.active {
+  background-color: #00bce4;
+  font-weight: 700;
+}
+
+/* Animations CSS for header titles */
+
+@keyframes MoverTextoDerecha{
+  0%{
+    transform: translateX(-100%);
+  } 
+  
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes MoverTextoArriba{
+  0%{
+    transform: translateY(-500%);
+  } 
+  
+  100% {
+    transform: translateY(0%);
+  }
+}

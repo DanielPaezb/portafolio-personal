@@ -1,0 +1,91 @@
+/* Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+/* Variables */
+$White-color: #fff;
+$White-color-dark: #f2f2f2;
+$Black-color: #000;
+$Gray-dark: #9f9fa3;
+$Javascript-color: #ffdd00;
+$CSS3-color: #0099e5;
+$HTML-color: #ff4c4c;
+$SASS-color: #c76395;
+$Python-color: #4584b6;
+$Font-family:'Source Sans Pro', sans-serif;
+$Font-weight: 500;
+
+.tecnologias_desarrollo {
+  width: 100%;
+  height: 80vh;
+  background-color: $White-color-dark;
+
+  &--titulo {
+    display: flex;
+    justify-content: center;
+    font-family: $Font-family;
+    padding: 10px;
+
+    h2 {
+      display: inline-block;
+      color: $Gray-dark;
+      font-size: 35px;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    h2::before {
+      content: "";
+      height: 2px;
+      background: #ff5722;
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: all 0.5s ease;
+    }
+
+    h2:hover::before {
+      width: 100%;
+    }
+  }
+
+  &--iconos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 300px;
+    flex-wrap: wrap;
+
+    i {
+      font-size: 3.2em;
+
+      p{
+        font-family: $Font-family;
+        display: inline;
+      }
+    }
+
+    .js {
+      color: $Javascript-color;
+    }
+
+    .css3 {
+      color: $CSS3-color;
+    }
+
+    .html {
+      color: $HTML-color;
+    }
+
+    .sass {
+      color: $SASS-color;
+    }
+
+    .python{
+      color: $Python-color;
+    }
+
+
+  }
+}

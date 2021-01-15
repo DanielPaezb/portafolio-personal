@@ -9,365 +9,123 @@
   <meta name="author" content="Daniel Páez, danielcamilo_@hotmail.com" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/normalize.css" />
-  <link rel="stylesheet" href="styles/styles.css" />
-  <link rel="stylesheet" href="styles/mobile.css">
-  <link rel="shortcut icon" href="icon/icon.ico" type="image/x-icon">
-  <title>Portafolio | Daniel Páez </title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="shortcut icon" href="icon/programming.png" type="image/x-icon">
+  <title>Daniel Páez</title>
 </head>
 
 <body>
-  <header class="contenedor-header">
-    <div class="container">
-      <div class="row">
-        <div class="brand-logo">
-          <a href="#home" class="logo">&#60;DC/&#62;</a>
-        </div>
-        <div class="menu_bar">
-            <span class="fas fa-bars " id=iconNav></span>
-        </div>
-        <div class="nav-bar" id="navbar">
-          <ul class="ul">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+  <header class="header" id="home">
+    <div class="header--menu">
+      <nav>
+        <ul class="contenedorLista-ul">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#quien-soy">Quién soy</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header--home">
+      <h1>¡<span>Bienvenidos</span> a mi Página Web!</h1>
+      <h2>Soy Dany :&#41;</h2>
+    </div>
+    <div class="up">
+      <a href="#home"><i class="fas fa-chevron-circle-up"></i></a>
     </div>
   </header>
-  <!-- *******************************Fin del header*************************** -->
-  <section id="home" class="homeintro">
-    <div class="overlay-intro"></div>
-    <div class="intro-content-in">
-      <div class="cell">
-        <div class="container">
-          <h1 class="title-intro">Welcome to my website, I'm Dany</h1>
-          <h5 class="sub-intro">A front-End Web Developer, and autodidact lerner :)</h5>
-        </div>
+
+
+
+
+
+
+  <section class="curriculum__vitae" id="quien-soy">
+    <div class="curriculum__vitae--texto">
+      <h2>Descarga mi hoja de vida</h2>
+    </div>
+    <div class="curriculum__vitae--link">
+      <a class="curriculum__vitae--link__boton_descagar" target="_blank" href="https://drive.google.com/file/d/14pkxtAYADyOG-SoN3Pm3JtkiSlYdQCZn/view" download>Descarga CV</a>
+      <i class="fas fa-arrow-circle-down"></i>
+    </div>
+  </section>
+  <section class="tecnologias_desarrollo" id="tecnologias">
+    <div class="tecnologias_desarrollo--titulo">
+      <h2>Tecnologías con las que he trabajado</h2>
+    </div>
+    <div class="tecnologias_desarrollo--iconos">
+      <i class="fab fa-js-square js">
+        <p> JavaScript</p>
+      </i>
+      <i class="fab fa-css3-alt css3">
+        <p> CSS3</p>
+      </i>
+      <i class="fab fa-sass sass">
+        <p> SASS</p>
+      </i>
+      <i class="fab fa-html5 html">
+        <p> HTML5</p>
+      </i>
+      <i class="fab fa-python python">
+        <p> Python</p>
+      </i>
+    </div>
+  </section>
+  <section class="blogs_contenedor" id="blogs">
+    <div class="tecnologias_desarrollo--titulo">
+      <h2>Blogs</h2>
+    </div>
+    <div class="blogs_contenedor--blog">
+      <a href="#"><img class="blogs_contenedor--imagen" src="https://i.ibb.co/bz2fzt0/angular.png"
+          alt="imagen1-blog"></a>
+      <div class="blogs_contenedor--imagen_titulo">
+        <h3>Tecnología</h3>
+      </div>
+    </div>
+    <div class="blogs_contenedor--blog">
+      <a href="#"><img class="blogs_contenedor--imagen" src="https://i.ibb.co/bz2fzt0/angular.png"
+          alt="imagen1-blog"></a>
+      <div class="blogs_contenedor--imagen_titulo">
+        <h3>Tecnología</h3>
+      </div>
+    </div>
+    <div class="blogs_contenedor--blog">
+      <a href="#"><img class="blogs_contenedor--imagen" src="https://i.ibb.co/bz2fzt0/angular.png"
+          alt="imagen1-blog"></a>
+      <div class="blogs_contenedor--imagen_titulo">
+        <h3>Tecnología</h3>
       </div>
     </div>
   </section>
-  <!-- *******************************Fin del home*************************** -->
-  <section class="about-me">
-    <div class="container">
-      <div class="row">
-        <div class="section-title" id="about">
-          <h2>&#60;Acerca de mí&#62;</h2>
-          <p class="small text-uppercase">Información acerca de mí</p>
-        </div>
-        <div class="row">
-          <div class="about-content">
-            <div class="row">
-              <div class="img">
-                <img src="https://i.ibb.co/hmHqgsy/bg.png" alt="about me">
-              </div>
-              <div class="text">
-                <h4>Soy Daniel Camilo Páez</h4>
-                <h6>A <span>front-End</span> Web Developer</h6>
-                <p>Soy Ingeniero electrónico, con enfoque al desarrollo Frontend, habilidades para completar tareas de
-                  forma precisa en un entorno rápido con plazos de entrega conflictivos, experiencia CSS3, HTML5 y JS,
-                  así como
-                  en electrónica digital, me motiva una constante pasión por seguir aprendiendo de las nuevas
-                  tecnologías que
-                  surgen cada día y seguir creciendo profesionalmente, aportando ideas, estrategias y/o mejoras que
-                  permitan
-                  dar valor agregado a cada uno de los proyectos que estén a mi cargo, persona honesta, ética y puntual.
-                </p>
-                <div class="info">
-                  <div class="list">
-                    <label>Email: </label>
-                    <p>dcpaez595@misena.edu.co</p>
-                  </div>
-                  <div class="list">
-                    <label>Phone: </label>
-                    <p>&#40;+57&#41; 312-538-2068</p>
-                  </div>
-                  <div class="list">
-                    <label>Residence: </label>
-                    <p>Bogota D.C</p>
-                  </div>
-                  <div class="list">
-                    <label>Country: </label>
-                    <p>Colombia</p>
-                  </div>
-                </div>
-                <div class="social-media">
-                  <a href="https://www.linkedin.com/in/daniel-p%C3%A1ez-112810/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                  <a href="https://github.com/DanielPaezb" target="_blanc"><i class="fa fa-github"></i></a>
-                  <a href="https://wa.link/8s8hl2"><i class="fa fa-whatsapp" target="_blanc"></i></a>
-                  <a href="https://vk.com/d.paezb"><i class="fa fa-vk" target="_blank"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section class="trabajos" id="proyectos">
+    <div class="tecnologias_desarrollo--titulo center">
+      <h2>Proyectos - Experiencia</h2>
+    </div>
+    <div class="trabajos--enlaces">
+      <a href="https://senaceet.github.io/netflix-DanielPaezb/" target="_blank"><img
+          src="https://i.ibb.co/6WDrDwt/Netflix.jpg" alt="Netflix"></a>
+      <a href="https://senaceet.github.io/netflix-DanielPaezb/" target="_blank"><img
+          src="https://i.ibb.co/6WDrDwt/Netflix.jpg" alt="Netflix"></a>
+      <a href="https://senaceet.github.io/netflix-DanielPaezb/" target="_blank"><img
+          src="https://i.ibb.co/6WDrDwt/Netflix.jpg" alt="Netflix"></a>
+      <a href="https://senaceet.github.io/netflix-DanielPaezb/" target="_blank"><img
+          src="https://i.ibb.co/6WDrDwt/Netflix.jpg" alt="Netflix"></a>
     </div>
   </section>
-  <!-- ******************************* Fin redes sociales *************************** -->
-  <section class="message-text">
-    <div class="container">
-      <div class="row">
-        <div class="text">
-          <h2>Desarrollador Front-End, click en el boton para descargar CV</h2>
-        </div>
-        <div class="button">
-          <a href=""><i class="fas fa-cloud-download-alt"></i></a>
-        </div>
-      </div>
+  <footer class="footer" id="contacto">
+    <div class="footer-desarrollador">
+      <h1>Desarrollado por Daniel Páez</h1>
     </div>
-  </section>
-  <!-- ******************************* Fin de sección CV *************************** -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="section-title text-center">
-          <h2>&#60;Servicios&#62;</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="service-contents">
-          <div class="box">
-            <div class="icons">
-              <i class="fa fa-mobile"></i>
-            </div>
-            <h5>Diseños Web completamente adaptables</h5>
-            <p>Hoy en día con el avance de la tecnología, todos los diseños de <span>Sitios Web</span>
-              deben estar optimizados para dispositivos móviles y es por eso que todos los diseños son
-              full responsivos.
-            </p>
-          </div>
-          <div class="box">
-            <div class="icons">
-              <i class="fa fa-book"></i>
-            </div>
-            <h5>Creatividad</h5>
-            <p>
-              En un diseño web, siempre antes de realizar una maqueta, debe habe run toque de creatividad,
-              esa creatividad que realza el talento de cada desarrollador y motiva al cliente.
-            </p>
-          </div>
-          <div class="box">
-            <div class="icons">
-              <i class="fas fa-award"></i>
-            </div>
-            <h5>Lorem</h5>
-            <p>
-              Lorem
-            </p>
-          </div>
-          <div class="box">
-            <div class="icons">
-              <i class="fas fa-award"></i>
-            </div>
-            <h5>Lorem</h5>
-            <p>
-              Lorem
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- *************************** Fin de sección services *************************** -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <div class="row">
-        <div class="skills-content">
-          <div class="row">
-            <div class="section-title">
-              <h2>&#60;Professional skills&#62;</h2>
-              <p>Estudié una tecnología en <span class="span-color">Desarrollo De Software</span>
-                por qué me encanta la programación y el diseño web, así mismo, cada día hay un montón
-                de nuevas tecnologías de que hacen su debut mejorando las ya existentes como <span
-                  class="span-color">Frameworks</span>
-                orientados a <span class="span-color">JavaScript</span> y UI/UX, que hacen que desarrollar entornos Web
-                sea cada vez más cómodo.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="skills-box">
-              <h6>Front-End</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 50%;">
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills-box">
-              <h6>Databases - SQL</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 50%;">
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills-box">
-              <h6>JavaScript</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 30%;">
-                  <span>30%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills-box">
-              <h6>Python</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 20%;">
-                  <span>20%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills-box">
-              <h6>DevOps</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 43%;">
-                  <span>33%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills-box">
-              <h6>C++</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 50%;">
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills-box">
-              <h6>React</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 20%;">
-                  <span>20%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills-box">
-              <h6>Electrónica</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 70%;">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills-box">
-              <h6>UI/UX</h6>
-              <div class="skills-bar">
-                <div class="skills-in-the-bar" style="width: 60%;">
-                  <span>60%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="image">
-          <img src="./images/svg.svg" alt="skills">
-          <img src="./images/react.svg" alt="skills">
-          <img src="./images/smartphone.svg" alt="skills">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="section-title text-center">
-          <h2>My Portfolio Works</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="comment-portfolio">
-          <p>
-            Estos son algunos de los <span class="span-color">proyectos</span> que he codificado a lo largo del aprendizaje 
-            autodidacta y mediante el estudio de una tecnología en programación de <span class="span-color">Software</span>.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="portfolio-gallery">
-          <div class="item" data-id="react-work">
-            <div class="inner">
-              <img src="https://i.ibb.co/6WDrDwt/Netflix.jpg" alt="netflix">
-              <div class="overlay">
-                <a href="https://senaceet.github.io/netflix-DanielPaezb/" target="_blank"><span class="fa fa-plus"></span></a>
-                <h4>Netflix Educational Clone</h4>
-                <h4>HTML - CSS - JS</h4>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-id="html-csss-js">
-            <div class="inner">
-              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
-              <div class="overlay">
-                <a href="#"><span class="fa fa-plus"></span></a>
-                <h4>React Works</h4>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-id="fashion">
-            <div class="inner">
-              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
-              <div class="overlay">
-                <a href="#"><span class="fa fa-plus"></span></a>
-                <h4>React Works</h4>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-id="Photos">
-            <div class="inner">
-              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
-              <div class="overlay">
-                <a href="#"><span class="fa fa-plus"></span></a>
-                <h4>React Works</h4>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-id="books">
-            <div class="inner">
-              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
-              <div class="overlay">
-                <a href="#"><span class="fa fa-plus"></span></a>
-                <h4>React Works</h4>
-              </div>
-            </div>
-          </div>
-          <div class="item" data-id="fashion">
-            <div class="inner">
-              <img src="https://i.ibb.co/Sm9Zwdy/Captura.png" alt="Logbook">
-              <div class="overlay">
-                <a href="#"><span class="fa fa-plus"></span></a>
-                <h4>React Works</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer-portfolio" id="contact">
-    <div class="footer--icon">
-      <a href="index.html" class="logo">&#60;DC/&#62;</a>
-    </div>
-    <div class="footer--name">
-        <h2>Daniel Camilo Páez Bonilla</h2>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/daniel-p%C3%A1ez-112810/" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/DanielPaezb" target="_blanc"><i class="fa fa-github"></i></a>
-          <a href="https://wa.link/8s8hl2"><i class="fa fa-whatsapp" target="_blanc"></i></a>
-          <a href="https://vk.com/d.paezb"><i class="fa fa-vk" target="_blank"></i></a>
-        </div>
-    </div>
-    <div class="footer--date">
-       <p>2020 - Todos los derechos reservados</p>
+    <div class="footer-iconos">
+      <a href="#"><i class="fab fa-github-alt github"></i></a>
+      <a href="#"><i class="fab fa-instagram instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
     </div>
   </footer>
-  
-  <script src="js/menu_amburguesa.js"></script>
+
+
   <script src="https://kit.fontawesome.com/e4acb4060a.js"></script>
 </body>
 

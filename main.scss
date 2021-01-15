@@ -1,0 +1,19 @@
+@import './styles/header';
+@import './styles/curriculum_vitae';
+@import './styles/tecnologias_desarrollo';
+@import './styles/seccion_blogs';
+@import './styles/footer';
+@import './styles/proyectos_experiencia';
+@import './styles/up';
+@import './styles/mobile/headerMobile';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,76 @@
+/* Colors variables*/
+$BlueColor: #0275db; 
+
+
+@media screen and (max-width: 957px) {
+  .header {
+    &--home {
+      h1 {
+        
+        font-size: 60px;
+
+      }
+
+      h2 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+/* Media Screen at 767px*/
+@media screen and (max-width: 767px) {
+  .header {
+    &--home {
+      h1 {
+        
+        font-size: 50px;
+
+      }
+
+      h2 {
+        padding-top: 50px;
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+/* Media Screen at 648px*/
+@media screen and (max-width: 648px) {
+  .header {
+    &--home {
+      h1 {
+        font-size: 30px;
+
+      }
+
+      h2 {
+        padding-top: 50px;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+/* Media Screen at 400px*/
+@media screen and (min-width: 400px) {
+  .header {
+    &--home {
+      h1 {
+        
+        font-size: 30px;
+
+      }
+
+      h2 {
+        padding-top: 50px;
+        font-size: 40px;
+      }
+
+      span{
+        color: $BlueColor;
+      }
+    }
+  }
+}

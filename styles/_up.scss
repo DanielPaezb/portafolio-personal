@@ -1,0 +1,23 @@
+$Up-color: rgba(0, 0, 0, 0.4);
+$Up-color2: rgba(0, 0, 0, 0.8);
+
+.up{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    position: fixed;
+    align-items: flex-end;
+
+    i{
+        color: $Up-color;
+        font-size: 2.5em;
+
+        &:hover{
+            color: $Up-color2;
+        }
+    }
+
+}
+

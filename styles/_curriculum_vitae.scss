@@ -1,0 +1,56 @@
+/* Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Variables */
+$White-color: #fff;
+$Black-color: #000;
+$Gray-dark:  #9f9fa3;
+$Font-family: 'Roboto', sans-serif;
+$Font-weight: 500;
+
+.curriculum__vitae{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-image: url('https://i.ibb.co/DgGFbVX/logo-og.png');
+    background-attachment: fixed;
+    font-family: $Font-family;
+
+    &--texto{
+        h2{
+            color: $White-color;
+            line-height: 70px;
+        }
+    }
+
+    &--link{
+        background: $White-color;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: 3s all;
+
+        &:hover{
+            background: transparent;
+            transition: 0.5s all;
+        }
+
+        &__boton_descagar{
+            text-decoration: none;
+            font-size: 18px;
+            color: $Black-color;
+            font-weight: $Font-weight;
+
+            &:hover{
+                color:$White-color;
+                font-weight: $Font-weight;
+            }
+        }
+    }
+
+    .fa-arrow-circle-down{
+        color: $Gray-dark;
+        
+    }
+}
+
